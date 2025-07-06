@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section style="padding: 40px 20px; max-width: 1000px; margin: auto;">
+    <h2 style="font-size: 2.5rem; color: #2c3e50; text-align: center; margin-bottom: 40px;">
+        👨‍💻 About Me
+    </h2>
+
+    <div style="background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); margin-bottom: 40px;">
+        <p style="font-size: 1.15rem; color: #444; text-align: center;">
+            I am a <strong style="color: #2980b9;">Full Stack Developer</strong>, currently working as an <strong>Intern</strong> focused on building efficient backend systems and user-friendly frontend experiences.
+        </p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+        <!-- Education Card -->
+        <div style="flex: 1; min-width: 300px; background: #f0f9ff; border-left: 5px solid #1abc9c; padding: 20px; border-radius: 10px;">
+            <h3 style="color: #1abc9c; font-size: 1.4rem;">🎓 Education</h3>
+            <ul style="color: #333; line-height: 1.8; padding-left: 20px;">
+                <li>📘 Matriculation from OAV Surada with 78%</li>
+                <li>📘 Intermediate from OAV Surada with 65%</li>
+                <li>🎓 Bachelor's in Computer Science, NIST University Berhampur</li>
+            </ul>
+        </div>
+
+        <!-- Achievements Card -->
+        <div style="flex: 1; min-width: 300px; background: #fff7e6; border-left: 5px solid #f39c12; padding: 20px; border-radius: 10px;">
+            <h3 style="color: #f39c12; font-size: 1.4rem;">🏆 Achievements</h3>
+            <ul style="color: #333; line-height: 1.8; padding-left: 20px;">
+                <li>✅ Completed 5+ projects</li>
+                <li>📜 Certified Python Developer</li>
+                <li>🛰️ CCNA certified from CISCO (Networking)</li>
+                <li>🐍 Completed Basics Of Python (INFOSYS Certified)</li>
+                <li>🧾 Internship at Asirudh Pvt. Ltd. (Backend with Flask, Routing, DB)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Resume Button -->
+    <div style="text-align: center; margin-top: 50px;">
+        <a href="/static/resume.pdf" target="_blank" style="padding: 12px 25px; background-color: #3498db; color: white; border-radius: 6px; font-size: 1rem; text-decoration: none; transition: background-color 0.3s ease;">
+            📄 View My Resume
+        </a>
+    </div>
+</section>
+{% endblock %}

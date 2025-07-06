@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section style="text-align: center; padding: 40px 20px;">
+    <h2 style="font-size: 2.5rem; color: #2c3e50; margin-bottom: 20px;">Welcome!</h2>
+    <p style="font-size: 1.2rem; color: #555;">
+        Hi, I'm <strong style="color: #3498db;">Chandra Sekhar Sahu</strong>, a Computer Science student and passionate <strong>Backend Developer</strong>
+    </p>
+
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-pic" style="margin-top: 30px;">
+
+    <div style="margin-top: 30px; font-size: 1.1rem; color: #444; max-width: 700px; margin-left: auto; margin-right: auto;">
+        <p>I specialize in building efficient, scalable, and secure server-side applications using Python and Flask. I'm deeply interested in software architecture, RESTful APIs, and database design.</p>
+
+        <p>Over the past few months, I've worked on various projects ranging from personal portfolio websites to payment fraud detection systems. I'm always eager to explore new technologies and enhance my skillset through real-world problem solving.</p>
+
+        <p>When I'm not coding, I enjoy reading about cybersecurity, participating in hackathons, and contributing to open-source projects.</p>
+    </div>
+</section>
+{% endblock %}

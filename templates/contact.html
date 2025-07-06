@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section style="padding: 30px; max-width: 800px; margin: auto;">
+    <h2 style="font-size: 2rem; color: #2c3e50; margin-bottom: 20px; text-align: center;">📬 Contact Me</h2>
+
+    <div style="background-color: #f9fafc; padding: 20px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+        <p style="font-size: 1.1rem; color: #444;"><strong>📧 Email:</strong> chandrasekharsahu2929@gmail.com</p>
+        <p style="font-size: 1.1rem; color: #444;"><strong>💻 GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" style="color: #2563eb;">github.com/yourusername</a></p>
+        <p style="font-size: 1.1rem; color: #444;"><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/Chandra%20sekhar%20Sahu" target="_blank" style="color: #2563eb;">linkedin.com/in/Chandra sekhar Sahu</a></p>
+    </div>
+
+    <h3 style="margin-top: 40px; color: #10b981;">📨 Send a Message (Static Form)</h3>
+    <form style="margin-top: 20px;">
+        <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Name:</label>
+        <input type="text" id="name" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;">
+
+        <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600;">Email:</label>
+        <input type="email" id="email" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;">
+
+        <label for="message" style="display: block; margin-bottom: 8px; font-weight: 600;">Message:</label>
+        <textarea id="message" rows="5" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;"></textarea>
+
+        <button type="submit" style="background-color: #2563eb; color: white; padding: 12px 25px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
+            ✉️ Send
+        </button>
+    </form>
+</section>
+{% endblock %}

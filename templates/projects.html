@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section style="padding: 30px;">
+    <h2 style="font-size: 2.2rem; text-align: center; color: #2c3e50; margin-bottom: 40px;">🚀 My Projects</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/project1.jpg') }}" alt="Furniture Store" class="project-img">
+            <div class="project-content">
+                <h3>🪑 Project One (FURNITURE STORE WEBSITE)</h3>
+                <p><strong>Description:</strong> A web app for allows users to check various furniture products as per their categories.</p>
+                <p><strong>Tech Stack:</strong> Flask, HTML, CSS</p>
+                <a href="https://github.com/yourusername/project1" target="_blank" class="btn">🔗 View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Fraud Detection System" class="project-img">
+            <div class="project-content">
+                <h3>🛡️ Project Two (ONLINE FRAUD DETECTION SYSTEM)</h3>
+                <p><strong>Description:</strong> A machine learning model to detect fraud transactions and prevent monetary loss.</p>
+                <p><strong>Tech Stack:</strong> Python, scikit-learn</p>
+                <a href="https://github.com/yourusername/project2" target="_blank" class="btn">🔗 View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/project3.jpg') }}" alt="Disease Prediction App" class="project-img">
+            <div class="project-content">
+                <h3>🏥 Project Three (DISEASE PREDICTION SYSTEM)</h3>
+                <p><strong>Description:</strong> A machine learning model to identify possible diseases and book appointments with top doctors.</p>
+                <p><strong>Tech Stack:</strong> Python, HTML, CSS, Scikit-learn</p>
+                <a href="https://github.com/yourusername/project3" target="_blank" class="btn">🔗 View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
